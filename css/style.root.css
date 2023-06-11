@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"); /* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"); /* Raleway */
+
+:root {
+    /* Fonts */
+    --font-poppins: "Poppins", sans-serif;
+    --font-raleway: "Raleway", sans-serif;
+
+    /* Colors */
+    --color-body: #282C34;
+    --color-navbar: #20232A;
+    --color-service: #2C3240;
+    --color-feedback: #20232A;
+    --color-footer: #121212;
+    --color-white: #F5F6F7;
+    --color-cyan: #61DAFB;
+}
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: var(--font-poppins);
+}
+body {
+    background-color: var(--color-body);
+}

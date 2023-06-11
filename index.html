@@ -27,13 +27,32 @@
                 </ul>
             </nav>
         </div>
+        <div class="menu-wrapper">
+            <div class="menu-container">
+                <div class="menu-stack"></div>
+                <div class="menu-stack"></div>
+                <div class="menu-stack"></div>
+            </div>
+        </div>
     </header>
+    <nav class="nav-sidebar">
+        <ul class="sidebar-list">
+            <li class="sidebar-list-item"><a href="#home">Beranda</a></li>
+            <li class="sidebar-list-item"><a href="#service">Layanan</a></li>
+            <li class="sidebar-list-item"><a href="#contact">Hubungi Kami</a></li>
+            <li class="sidebar-list-item"><a href="#feedback">Masukan &amp; Saran</a></li>
+        </ul>
+    </nav>
     <!-- 
         hc = home-content
         hp = home-paragraph
         hi = home-icon
+        him = home-icon-mobile
      -->
     <section id="home">
+        <div class="him-wrapper">
+            <img src="./images/code-icon.svg" alt="GoGreatSite" class="him home-icon-mobile">
+        </div>
         <div class="title-wrapper">
             <h1 class="title">GoGreatSite</h1>
             <h4 class="subtitle">Solusi Web yang Handal</h4>
@@ -67,8 +86,9 @@
             <div class="sc-container">
                 <div class="sl-container">
                     <div class="sl-head-container">
+                        <div class="sl-line-left sl-line-hidden"></div>
                         <div class="sl-circle">
-                            <span class="sl-text">1</span>
+                            <span class="sl-circle-text">1</span>
                         </div>
                         <div class="sl-line-right"></div>
                     </div>
@@ -83,7 +103,7 @@
                     <div class="sl-head-container">
                         <div class="sl-line-left"></div>
                         <div class="sl-circle">
-                            <span class="sl-text">2</span>
+                            <span class="sl-circle-text">2</span>
                         </div>
                         <div class="sl-line-right"></div>
                     </div>
@@ -98,8 +118,9 @@
                     <div class="sl-head-container">
                         <div class="sl-line-left"></div>
                         <div class="sl-circle">
-                            <span class="sl-text">1</span>
+                            <span class="sl-circle-text">3</span>
                         </div>
+                        <div class="sl-line-right sl-line-hidden"></div>
                     </div>
                     <div class="sl-title-container">
                         <h4 class="sl-title">Optimisasi SEO Pencarian Website</h4>
@@ -123,17 +144,17 @@
         <div class="cc-wrapper">
             <div class="cc-container">
                 <div class="cci-container">
-                    <div class="cci-title"></div>
+                    <div class="cci-title">Whatsapp</div>
                     <div class="cci-link-container">
                         <a href="https://wa.me/+6281515371103" target="_blank" class="cci-link">
-                            <img src="./images/whatsapp-icon.png" alt="" class="cci contact-content-icon">
+                            <img src="./images/whatsapp-icon.png" alt="Whatsapp GoGreatSite" class="cci contact-content-icon">
                         </a>
                     </div>
                 </div>
                 <div class="cci-container">
-                    <div class="cci-title"></div>
+                    <div class="cci-title">Instagram</div>
                     <a href="https://instagram.com/gogreatsite" target="_blank" class="cci-link">
-                        <img src="./images/instagram-icon.png" alt="" class="cci contact-content-icon">
+                        <img src="./images/instagram-icon.png" alt="Instagram GoGreatSite" class="cci contact-content-icon">
                     </a>
                 </div>
             </div>
@@ -144,22 +165,22 @@
      -->
     <section id="feedback">
         <div class="section-title-wrapper">
-            <h2 class="section-title">Layanan</h2>
-            <h4 class="section-subtitle">Kami memberi layanan yang terbaik</h4>
+            <h2 class="section-title">Masukan &amp; Saran</h2>
+            <h4 class="section-subtitle">Kami terbuka terhadap pendapat Anda</h4>
         </div>
         <div class="fc-wrapper">
             <div class="fc-container">
                 <div class="fc-field-container">
-                    <label for="name-input">Nama</label>
-                    <input type="text" id="name-input">
+                    <label for="name-input" class="fc-label">Nama</label>
+                    <input type="text" id="name-input" class="fc-input" autocomplete="off">
                 </div>
                 <div class="fc-field-container">
-                    <label for="email-input">Email</label>
-                    <input type="text" id="email-input">
+                    <label for="email-input" class="fc-label">Email</label>
+                    <input type="text" id="email-input" class="fc-input" autocomplete="off">
                 </div>
                 <div class="fc-field-container">
-                    <label for="feedback-input">Masukan &amp; Saran</label>
-                    <textarea id="feedback-input" rows="10"></textarea>
+                    <label for="feedback-input" class="fc-label">Masukan &amp; Saran</label>
+                    <textarea id="feedback-input" rows="10" class="fc-input" autocomplete="off"></textarea>
                 </div>
                 <div class="fc-btn-container">
                     <button class="fc-btn">Kirim</button>
@@ -172,7 +193,7 @@
     </section>
     <footer>
         <div class="ft-title-wrapper">
-            <h3 class="ft-title">GoGreatSite</h3>
+            <h3 class="ft-title"><a href="/">GoGreatSite</a></h3>
         </div>
         <div class="ft-list-wrapper">
             <ul class="ft-list">
@@ -189,6 +210,9 @@
             <a href="https://instagram.com/gogreatsite" target="_blank" class="ft-link">
                 <img src="./images/instagram-dark-icon.png" alt="GoGreatSite" class="ft-icon">
             </a>
+        </div>
+        <div class="ft-copyright-container">
+            <span class="ft-copyright">&copy; 2023 GoGreatSite. All rights reserved</span>
         </div>
     </footer>
     <script type="module" src="./js/main.js"></script>
