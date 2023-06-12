@@ -19,6 +19,9 @@ header {
 .menu-wrapper {
     display: none;
 }
+.nav-sidebar {
+    display: none;
+}
 .header-title {
     padding: 0 0 0 30px;
 }
@@ -201,10 +204,13 @@ header {
 .sl-line-hidden {
     visibility: hidden;
 }
-.sl-title-container,
-.sl-text-container {
+.sl-body-container {
     width: 90%;
     max-width: 210px;
+}
+.sl-title-container,
+.sl-text-container {
+    width: 100%;
     padding-top: 20px;
 }
 .sl-title {
