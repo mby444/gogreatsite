@@ -21,6 +21,18 @@ header {
 }
 .nav-sidebar {
     display: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: calc(-200px + 48px);
+    width: 100%;
+    background-color: var(--color-navbar);
+    padding-bottom: 16px;
+    /* transform: translate(0, -100%); */
+    transition: all 0.3s;
+}
+.nav-sidebar-shown {
+    transform: translate(0, 100%);
 }
 .header-title {
     padding: 0 0 0 30px;
@@ -101,6 +113,8 @@ header {
 }
 .hp-container {
     width: calc(100% - 250px);
+}
+.hp-subcontainer {
     display: flex;
 }
 .hi-container {
@@ -112,7 +126,7 @@ header {
 }
 .hp-line {
     width: 4px;
-    height: 195px;
+    height: 100%;
     background-color: var(--color-cyan);
 }
 .hp-text-container {
@@ -123,6 +137,7 @@ header {
     font-size: 14px;
     line-height: 21px;
     color: var(--color-white);
+    padding-bottom: 2.5px;
 }
 .home-icon {
     width: 250px;
@@ -266,6 +281,8 @@ header {
 .cci {
     cursor: pointer;
     transition: transform 0.3s;
+    width: 230px;
+    height: 230px;
 }
 .cci:hover {
     transform: scale(1.1);
