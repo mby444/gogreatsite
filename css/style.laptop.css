@@ -246,6 +246,106 @@ header {
 }
 /* End Service */
 
+/* Package */
+#package {
+    width: 100%;
+    background-color: var(--color-navbar);
+}
+.pc-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 75px;
+}
+.pc-container {
+    width: 90%;
+    max-width: 990px;
+    display: flex;
+    justify-content: space-between;
+}
+.pl-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+.pl-head,
+.pl-body {
+    width: 100%;
+}
+.pl-head {
+    background-color: var(--color-cyan);
+    border-radius: 15px 15px 0px 0px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.pl-title {
+    font-family: var(--font-raleway);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--color-navbar);
+    padding-left: 10px;
+}
+.pl-body {
+    border-radius: 0 0 15px 15px;
+    background-color: var(--color-package-list);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pl-description-container,
+.pl-line,
+.pl-price-container,
+.plf-container,
+.pl-btn-container {
+    width: calc(100% - (2 * 15px));
+}
+.pl-description-text,
+.pl-price-text,
+.plf-list-item p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-white);
+    font-weight: 500;
+}
+.pl-description-text {
+    font-weight: 400;
+}
+.pl-line {
+    height: 1px;
+    background-color: var(--color-line);
+}
+.plf-list {
+    color: var(--color-white);
+}
+.pl-btn-container {
+    width: 260px;
+    height: 60px;
+    background-color: var(--color-white);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.pl-btn-icon {
+    background-image: url("../images/whatsapp-dark-transparent-icon.png");
+    background-size: 100% 100%;
+    width: 35px;
+    height: 35px;
+    margin: 0 15px;
+}
+.pl-btn-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--color-footer);
+}
+/* End Package */
+
 /* Contact */
 .cc-wrapper {
     width: 100%;
