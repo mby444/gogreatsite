@@ -288,7 +288,7 @@ header {
     font-size: 22px;
     line-height: 26px;
     color: var(--color-navbar);
-    padding-left: 10px;
+    padding-left: 15px;
 }
 .pl-body {
     border-radius: 0 0 15px 15px;
@@ -301,7 +301,8 @@ header {
 .pl-line,
 .pl-price-container,
 .plf-container,
-.pl-btn-container {
+.pl-btn-container,
+.pl-note-container {
     width: calc(100% - (2 * 15px));
 }
 .pl-description-text,
@@ -314,6 +315,15 @@ header {
 }
 .pl-description-text {
     font-weight: 400;
+    padding: 20px 0;
+}
+.pl-price-text {
+    padding: 20px 0;
+}
+.plf-container {
+    padding: 20px 0;
+    /* height: calc(472px - (2 * 20px)); */
+    height: 450px;
 }
 .pl-line {
     height: 1px;
@@ -321,6 +331,10 @@ header {
 }
 .plf-list {
     color: var(--color-white);
+    padding-left: calc(15px + 3px);
+}
+.plf-list-item {
+    padding: 10px 0;
 }
 .pl-btn-container {
     width: 260px;
@@ -330,6 +344,11 @@ header {
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin: 25px 0;
+    transition: transform 0.2s;
+}
+.pl-btn-container:hover {
+    transform: scale(1.05);
 }
 .pl-btn-icon {
     background-image: url("../images/whatsapp-dark-transparent-icon.png");
@@ -343,6 +362,16 @@ header {
     font-size: 18px;
     line-height: 27px;
     color: var(--color-footer);
+}
+.pl-note-container {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+}
+.pl-note-text {
+    font-size: 12px;
+    color: var(--color-white);
 }
 /* End Package */
 
