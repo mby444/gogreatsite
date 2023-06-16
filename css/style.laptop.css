@@ -322,7 +322,6 @@ header {
 }
 .plf-container {
     padding: 20px 0;
-    /* height: calc(472px - (2 * 20px)); */
     height: 450px;
 }
 .pl-line {

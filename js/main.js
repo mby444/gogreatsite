@@ -1,6 +1,7 @@
 const menuBtn = document.querySelector(".menu-container");
-const fcBtn = document.querySelector(".fc-btn");
 const sidebarListItems = document.querySelectorAll(".sidebar-list-item");
+const fcBtn = document.querySelector(".fc-btn");
+const plBtns = document.querySelectorAll(".pl-btn-container");
 
 class FeedbackError {
     constructor(message) {
@@ -83,20 +84,45 @@ const submitFeedbackForm = async () => {
     }
 };
 
-sidebarListItems.forEach((element) => {
-    element.addEventListener("click", () => {
-        switchSidebar(true);
+const getSiteInfo = async () => {
+    try {
+        const rawData = await fetch("./env-json/gogreatsite.json");
+        const data = await rawData.json();
+        return data;
+    } catch (err) {
+        console.log(err);
+        return {};
+    }
+};
+
+const plBtnAction = async (index) => {
+    const { phone, packageTexts: texts } = await getSiteInfo();
+    const urls = texts.map((text) => {
+        const encText = encodeURIComponent(text);
+        return `https://wa.me/${phone}?text=${encText}`;
     });
-});
+    window.open(urls[index]);
+};
 
-menuBtn.addEventListener("click", () => {
-    toggleSidebar();
-});
-
-fcBtn.addEventListener("click", () => {
-    submitFeedbackForm();
-});
-
+const initListener = () => {
+    sidebarListItems.forEach((element) => {
+        element.addEventListener("click", () => {
+            switchSidebar(true);
+        });
+    });
+    menuBtn.addEventListener("click", () => {
+        toggleSidebar();
+    });
+    fcBtn.addEventListener("click", () => {
+        submitFeedbackForm();
+    });
+    plBtns.forEach((plBtn, i) => {
+        plBtn.addEventListener("click", () => {
+            plBtnAction(i);
+        });
+    });
+};
 window.addEventListener("load", () => {
+    initListener();
     initTypedSubtitle();
 });
