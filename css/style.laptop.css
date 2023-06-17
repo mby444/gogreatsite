@@ -24,7 +24,7 @@ header {
     position: fixed;
     z-index: 9;
     left: 0;
-    top: calc(-200px + 48px);
+    top: calc(-246px + 48px);
     width: 100%;
     background-color: var(--color-navbar);
     padding-bottom: 16px;
