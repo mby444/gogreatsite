@@ -10,7 +10,8 @@
     --color-body: #282C34;
     --color-navbar: #20232A;
     --color-service: #2C3240;
-    --color-package-list: #315461;
+    /* --color-package-list: #315461; */
+    --color-package-list: #2C3240;
     --color-line: rgba(245, 246, 247, 0.2);
     --color-feedback: #20232A;
     --color-footer: #121212;
