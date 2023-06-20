@@ -15,8 +15,8 @@ const checkEmail = (email = "") => {
     return output;
 };
 
-const initTypedSubtitle = () => {
-    const texts = [
+const initTypedText = () => {
+    const subtitleTexts = [
         "Solusi Web yang Handal",
         "Kreativitas yang Menginspirasi",
         "Berkolaborasi dalam Kesempurnaan",
@@ -24,12 +24,20 @@ const initTypedSubtitle = () => {
         "Menghadirkan Potensi Penuh",
         "Percayakan Keahlian Kami"
     ];
+    const homeParagraphText = "GoGreatSite adalah solusi yang sempurna untuk kebutuhan pembuatan website Anda. Kami adalah tim ahli yang menggabungkan kreativitas, keahlian teknis, dan pemahaman mendalam tentang strategi digital. Dengan dedikasi kami untuk menciptakan pengalaman online yang luar biasa, kami menghadirkan desain website yang menawan, fungsionalitas yang canggih, dan keterlibatan pengguna yang tinggi.";
+
     new Typed(".subtitle-typed", {
-        strings: [...texts],
+        strings: [...subtitleTexts],
         loop: true,
         typeSpeed: 25,
         backSpeed: 10,
         backDelay: 1000,
+    });
+    new Typed(".hp-text-typed", {
+        strings: [homeParagraphText],
+        loop: false,
+        typeSpeed: 8,
+        showCursor: false,
     });
 };
 
@@ -96,8 +104,15 @@ const getSiteInfo = async () => {
 };
 
 const plBtnAction = async (index) => {
-    const { phone, packageTexts: texts } = await getSiteInfo();
-    const urls = texts.map((text) => {
+    const {
+        phone,
+        packageTexts: texts,
+        packageTextsDesktop: textsDesktop,
+    } = await getSiteInfo();
+    console.log(104, textsDesktop);
+    const listOfTexts = window.innerWidth > 800 ? textsDesktop : texts;
+    console.log(106, listOfTexts);
+    const urls = listOfTexts.map((text) => {
         const encText = encodeURIComponent(text);
         return `https://wa.me/${phone}?text=${encText}`;
     });
@@ -124,5 +139,5 @@ const initListener = () => {
 };
 window.addEventListener("load", () => {
     initListener();
-    initTypedSubtitle();
+    initTypedText();
 });

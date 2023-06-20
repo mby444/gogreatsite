@@ -1,3 +1,17 @@
+@media screen and (max-width: 1080px) {
+    /* Package */
+    .pc-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+    }
+    .pl-container {
+        /* margin-bottom: 40px; */
+        margin-bottom: 65px;
+    }
+    /* End Package */
+}
+
 @media screen and (max-width: 800px) {
     /* Navbar */
     .header-text-wrapper:nth-child(1) {
@@ -88,6 +102,7 @@
     }
     .hc-container {
         width: 90%;
+        min-height: 107.5px;
     }
     .hi-container {
         display: none;
@@ -166,14 +181,10 @@
         text-align: left;
         padding: 5px 0 25px 0;
     }
+    
     /* End Service */
 
     /* Package */
-    .pc-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-evenly;
-    }
     .pl-container {
         margin-bottom: 40px;
     }
@@ -282,16 +293,12 @@
     /* End Footer */
 }
 
-@media screen and (max-width: 500px) {
-    /* Service */
-    .sl-body-container {
-        max-width: 210px;
+@media screen and (max-width: 750px) {
+    /* Home */
+    .hc-container {
+        min-height: 128.5px;
     }
-    .sl-title-container {
-        max-width: 188px;
-    }
-    /* End Service */
-
+    /* End Home */
     /* Package */
     .pc-container {
         display: flex;
@@ -304,6 +311,25 @@
     .plf-container {
         height: initial;
     }
+    /* End Package */
+}
+
+@media screen and (max-width: 500px) {
+    /* Home */
+    .hc-container {
+        min-height: 170.5px;
+    }
+    /* End Home */
+    /* Service */
+    .sl-body-container {
+        max-width: 210px;
+    }
+    .sl-title-container {
+        max-width: 188px;
+    }
+    /* End Service */
+
+    /* Package */
     /* End Package */
 
     /* Contact */
@@ -318,4 +344,12 @@
         height: 230px;
     }
     /* End Contact */
+}
+
+@media screen and (max-width: 400px) {
+    /* Home */
+    .hc-container {
+        min-height: 233.5px;
+    }
+    /* End Home */
 }
