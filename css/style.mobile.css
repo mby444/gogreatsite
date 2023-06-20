@@ -87,7 +87,7 @@
         line-height: 21px;
     }
     .hc-container {
-        width: 85%;
+        width: 90%;
     }
     .hi-container {
         display: none;
@@ -224,6 +224,9 @@
     .cci {
         width: 180px;
         height: 180px;
+    }
+    .pl-note-text {
+        font-size: 10px;
     }
     /* End Contact */
 

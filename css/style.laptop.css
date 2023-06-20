@@ -270,6 +270,7 @@ header {
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
+    box-shadow: 0 0 4px 1px #fff3;
 }
 .pl-head,
 .pl-body {
@@ -297,6 +298,15 @@ header {
     flex-direction: column;
     align-items: center;
 }
+/* .pl-body-1 {
+    background-color: var(--color-package-list-1);
+}
+.pl-body-2 {
+    background-color: var(--color-package-list-2);
+}
+.pl-body-3 {
+    background-color: var(--color-package-list-3);
+} */
 .pl-description-container,
 .pl-line,
 .pl-price-container,
