@@ -13,6 +13,7 @@
     /* --color-package-list: #315461; */
     --color-package-list: var(--color-navbar);
     --color-line: rgba(245, 246, 247, 0.2);
+    --box-shadow-color-1: #fff3;
     --color-feedback: var(--color-navbar);
     --color-footer: #121212;
     --color-white: #F5F6F7;

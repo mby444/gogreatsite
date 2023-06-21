@@ -270,7 +270,7 @@ header {
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
-    box-shadow: 0 0 4px 1px #fff3;
+    box-shadow: 0 0 4px 1px var(--box-shadow-color-1);
 }
 .pl-head,
 .pl-body {
